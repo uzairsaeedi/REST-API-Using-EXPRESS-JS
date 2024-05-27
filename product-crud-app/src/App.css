@@ -1,0 +1,258 @@
+/* Base styling for the App component */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the App logo *//* Container for the form to center it on the page */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+/* Styling for the form itself */
+.product-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Title styling */
+.form-title {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+/* General styling for form controls (inputs) */
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+/* Additional margin between form groups */
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+/* Margin top for the first form group */
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+/* Button styling */
+.submit-button {
+  width: 200px;
+  padding: 10px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 576px) {
+  .product-form {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}
+/* Container for the product list */
+.product-list-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Title styling for the product list */
+.product-list-title {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+/* Modal styling */
+.modal-content {
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  background-color: #343a40;
+  color: white;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.modal-title {
+  font-size: 1.25em;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.form-control {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.btn-success {
+  width: 200px;
+  padding: 10px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 1em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Product list item styling */
+.list-group-item {
+  background-color: #e9f7ef;
+  border: 1px solid #d4edda;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.list-group-item .fa {
+  cursor: pointer;
+  color: #6c757d;
+  transition: color 0.3s ease;
+}
+
+.list-group-item .fa:hover {
+  color: #495057;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .btn-success {
+    width: 100%;
+  }
+
+  .modal-content {
+    padding: 10px;
+  }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Styling for the header */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+}
+
+/* Styling for links */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #21a1f1;
+}
+
+/* Additional styling for main content */
+.App-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.App-content {
+  background: #fff;
+  color: #282c34;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.App-footer {
+  background-color: #20232a;
+  padding: 20px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 2vmin);
+  }
+
+  .App-content {
+    padding: 15px;
+  }
+}
+
+/* Responsive design for very small screens */
+@media (max-width: 480px) {
+  .App-header {
+    font-size: calc(6px + 2vmin);
+  }
+
+  .App-content {
+    padding: 10px;
+  }
+}
