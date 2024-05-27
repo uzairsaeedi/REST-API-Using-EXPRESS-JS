@@ -2,11 +2,9 @@ const express = require('express')
 const mongoose = require('mongoose')
 const bodyparser = require('body-parser')
 const productRoutes = require('./routes/index')
-const cors = require('cors')
+
 const app = express();
 
-
-app.use(cors())
 app.use(bodyparser.json());
 app.use(productRoutes)
 // app.get(`/`,(req,res)=>{
